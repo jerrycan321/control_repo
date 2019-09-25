@@ -4,7 +4,7 @@ class minecraft (
   
 
   ) {
-  file {'/opt/minecraft':
+  file {$install_dir:
     ensure => directory,
   }
   file {"${install_dir}/minecraft_server.jar":
